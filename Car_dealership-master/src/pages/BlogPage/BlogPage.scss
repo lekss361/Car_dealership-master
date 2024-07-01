@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+
+  .name {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .btn {
+    min-width: 132px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+}

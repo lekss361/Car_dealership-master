@@ -1,0 +1,166 @@
+@import '../../variables';
+
+.about-company-section {
+
+  h1 {
+    color: $black;
+    font-family: $main-font;
+    font-size: 70px;
+    font-weight: 700;
+    padding-top: 71px;
+  }
+
+  p {
+    color: $black;
+    font-family: $main-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  ul {
+    li::marker {
+      color: $accent-color;
+    }
+
+    li {
+      padding: 5px 0;
+    }
+  }
+
+  .office-block {
+    padding: 50px 0;
+
+    .office-title {
+      color: $black;
+      font-family: $main-font;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    img {
+      width: inherit;
+    }
+  }
+
+  .distribution-section {
+    border-radius: 25px;
+    background: $background-light-color;
+    display: flex;
+    justify-content: space-around;
+    padding: 83px 0;
+    text-align: center;
+
+    .distribution-block {
+      display: flex;
+      flex-direction: column;
+
+      .city-count {
+        color: $accent-color;
+        font-family: $main-font;
+        font-size: 252px;
+        font-weight: 500;
+      }
+
+      .text {
+        color: $accent-color;
+        font-family: $main-font;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+      }
+
+      .rewards {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 84px;
+
+        .image {
+          background-color: $black;
+          border-radius: 50%;
+          padding: 16px;
+          height: 68px;
+          width: 68px;
+        }
+
+        .reward {
+          padding-top: 18px;
+
+          p {
+            color: $background-third-color;
+          }
+        }
+      }
+    }
+  }
+
+  .map-block {
+    position: relative;
+
+    .city {
+      padding-left: 16px;
+      white-space: nowrap;
+    }
+
+    .point {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: $accent-color;
+      border-radius: 50%;
+    }
+
+    .moscow {
+      top: 261px;
+      left: 85px;
+    }
+
+    .petersburg {
+      top: 227px;
+      left: 69px;
+    }
+
+    .astrakhan {
+      top: 289px;
+      left: 108px;
+    }
+
+    .krasnodar {
+      top: 351px;
+      left: 31px;
+    }
+
+    .vologda {
+      top: 271px;
+      left: 164px;
+    }
+
+    .novgorod {
+      top: 326px;
+      left: 211px;
+
+      .city {
+        padding-left: 0px;
+        padding-top: 14px;
+      }
+    }
+
+    .tula {
+      top: 322px;
+      left: 300px;
+    }
+
+    .arkhangelsk {
+      top: 357px;
+      left: 549px;
+    }
+  }
+}
+
+@media (max-width:850px) {
+  .distribution-section {
+    flex-direction: column;
+  }
+}
+
+@media (min-width:851px) {}

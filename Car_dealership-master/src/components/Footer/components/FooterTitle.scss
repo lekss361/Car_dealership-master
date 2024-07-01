@@ -1,0 +1,21 @@
+@import '../../../variables';
+
+.footer-title {
+    display: block;
+
+    p {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .accent-line {
+        margin-top: 8px;
+        width: 34px;
+        height: 2px;
+        background-color: $accent-color;
+        margin-bottom: 25px;
+    }
+}

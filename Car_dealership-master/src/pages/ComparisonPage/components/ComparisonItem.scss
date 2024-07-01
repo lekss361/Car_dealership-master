@@ -1,0 +1,51 @@
+@import '../../../variables';
+
+.comparison-item {
+    width: 350px;
+    display: grid;
+    border-right: 1px solid $background-secondary-color;
+
+    .main-info {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid $background-secondary-color;
+        height: 250px;
+        padding: 0 25px;
+
+        h2 {
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+
+        .car-img {
+            width: 270px;
+            height: 150px;
+        }
+
+        .info-header {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    p {
+        border-bottom: 1px solid $background-secondary-color;
+        font-weight: 400 !important;
+        padding-left: 25px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    button {
+        border: none;
+        background: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .in-favorites {
+        fill: $accent-color;
+    }
+}

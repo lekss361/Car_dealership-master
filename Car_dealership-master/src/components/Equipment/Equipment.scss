@@ -1,0 +1,43 @@
+@import '../../variables';
+
+.equipment-block {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  border-bottom: 1px $gray solid;
+  padding-bottom: 17px;
+
+  .title {
+    font-family: $main-font;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    border-bottom: 1px $gray solid;
+    padding-bottom: 17px;
+  }
+
+  hr {}
+
+  .equipment-list {
+
+    ul {
+
+      li {
+        font-family: $main-font;
+        line-height: 24px;
+      }
+
+      li::marker {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+
+@media (max-width:850px) {
+
+  
+}
+
+@media (min-width:851px) {}

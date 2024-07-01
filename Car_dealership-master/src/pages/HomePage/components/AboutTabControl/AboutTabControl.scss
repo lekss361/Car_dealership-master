@@ -1,0 +1,77 @@
+@import "../../../../variables";
+
+#about-tab-control {
+    margin-bottom: 90px;
+
+    .react-tabs {
+
+        .react-tabs__tab-list {
+            border-bottom: none;
+            display: flex;
+            gap: 50px;
+            margin-bottom: 50px;
+        }
+
+        .react-tabs__tab {
+            font-weight: 700;
+            border: none;
+            background-color: #FFFFFF;
+
+            .accent-line {
+                margin-top: 20px;
+                width: 81px;
+                height: 3px;
+            }
+        }
+
+        .react-tabs__tab--selected {
+            color: $accent-color;
+            text-align: center;
+            line-height: 24px;
+
+            .accent-line {
+                background-color: $accent-color;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        min-height: 144px;
+    }
+}
+
+@media (max-width: 850px) {
+    #about-tab-control {
+        padding: 0 15px;
+        margin-bottom: 60px;
+
+        .react-tabs {
+            .react-tabs__tab-list {
+                gap: 25px;
+                font-size: 14px;
+                margin-bottom: 30px;
+
+                .accent-line {
+                    margin-top: 11px;
+                    width: 70px;
+                    height: 3px;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 14px;
+            min-height: 400px;
+        }
+
+    }
+}

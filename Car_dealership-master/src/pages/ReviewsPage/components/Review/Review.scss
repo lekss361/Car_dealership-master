@@ -1,0 +1,79 @@
+@import '../../../../variables';
+$borderRadius: 25px;
+
+.reviews-section {
+  border-radius: $borderRadius;
+  background: $background-secondary-color;
+  width: 100%;
+
+  .review {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding-bottom: 30px;
+    width: 100%;
+
+    .video {
+      border-radius: $borderRadius $borderRadius 0 0;
+      overflow: hidden;
+      width: 100%;
+
+      iframe {
+        width: 100%;
+        height: calc(100vh/3.7);
+      }
+    }
+
+    .client-block {
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .client-name {
+        color: $dark-background;
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+
+      .client-review {
+        color: $secondary-color;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 851px) {
+  .reviews-section {
+
+    .review {
+
+      .video {
+
+        iframe {
+          width: calc(100vw/1.08);
+          height: calc(100vh/3.7);
+        }
+      }
+
+      .client-block {
+
+        .client-name {
+          font-size: 18px;
+        }
+
+        .client-review {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 850px) {}

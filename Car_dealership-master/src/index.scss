@@ -1,0 +1,72 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: $main-font;
+  color: $main-color;
+}
+
+body {
+  background-color: #fff;
+  color: $main-color;
+  font-family: $main-font;
+  line-height: normal;
+  font-style: normal;
+  width: 100%;
+}
+
+.main-container {
+  max-width: 1920px;
+  margin: 0 auto
+}
+
+section {
+  padding: 0 260px;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+p {
+  color: $secondary-color;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.route {
+  color: $route-color;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+@media (max-width: 850px) {
+  .computer-only {
+    display: none !important;
+  }
+
+  section {
+    padding: 0 5px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 850px) {
+  .mobile-only {
+    display: none !important;
+  }
+}

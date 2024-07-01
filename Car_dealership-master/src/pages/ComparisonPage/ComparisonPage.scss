@@ -1,0 +1,67 @@
+@import "../../variables";
+
+#comparison {
+
+    .controls {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        h1 {
+            padding-right: 40px;
+        }
+
+        .radiobutton-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+        }
+    }
+
+    .horizontal-line {
+        width: auto;
+        height: 1px;
+        background-color: $background-color;
+        margin-bottom: 70px;
+    }
+
+    .comparison-table {
+        padding-bottom: 110px;
+        display: flex;
+
+        .comparison-legend {
+            width: 350px;
+            display: grid;
+            border-right: 1px solid $background-secondary-color;
+
+            .comparison-legend-item {
+                border-bottom: 1px solid $background-secondary-color;
+
+                &:first-child {
+                    p {
+                        padding: 0 0 24px 0;
+                    }
+
+                    padding-bottom: 185px;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        .comparison-items-container {
+            display: flex;
+        }
+
+        p {
+            color: $main-color;
+            font-weight: 700;
+            line-height: normal;
+            padding: 24px 0;
+        }
+
+    }
+}

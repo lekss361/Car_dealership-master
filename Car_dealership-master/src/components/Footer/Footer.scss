@@ -1,0 +1,170 @@
+@import '../../variables';
+
+footer {
+  background-color: $main-color;
+  color: #ffffff;
+  border-radius: 25px 25px 0 0;
+  margin: 0 25px;
+  display: flex;
+  flex-direction: column;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 235px;
+
+    a {
+      color: #ffffff;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+
+  .horizontal-line {
+    height: 1px;
+    width: auto;
+    opacity: 0.2;
+    background: #ffffff;
+  }
+
+  .footer-container {
+    display: flex;
+    padding: 40px 235px 50px 235px;
+
+    .footer-block {
+      margin-right: 100px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .block-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .block-head-left {
+          display: flex;
+          gap: 20px;
+        }
+
+        .footer-link {
+          line-height: normal;
+        }
+      }
+
+      .credit-links {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .brands-container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .brands-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-background;
+    padding: 35px 260px;
+    align-items: center;
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    p {
+      font-size: 14px;
+
+      &.copyright {
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 22px;
+      }
+    }
+
+    a {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      color: $secondary-color;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  footer {
+    margin: 0 15px;
+
+    nav {
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 20px;
+      gap: 10px;
+
+      a {
+        font-size: 14px;
+        line-height: 243.187%;
+      }
+    }
+
+    .footer-container {
+      padding: 40px 20px;
+      flex-direction: column;
+      gap: 50px;
+
+      .footer-block {
+        margin-right: 30px;
+      }
+    }
+
+    .brands-container {
+      flex-wrap: wrap;
+    }
+
+    .info {
+      padding: 40px 20px;
+      flex-direction: column-reverse;
+
+      .rating-block {
+        order: 2;
+      }
+
+      .links-block {
+        order: 1;
+      }
+
+      .links {
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 12px;
+
+        &.copyright {
+          font-size: 16px;
+          line-height: 150%;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}

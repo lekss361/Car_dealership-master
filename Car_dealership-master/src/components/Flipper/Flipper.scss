@@ -1,0 +1,73 @@
+@import '../../variables';
+
+
+.sliders-block {
+  display: flex;
+  overflow: hidden;
+}
+
+.navigation-wrapper {
+  position: relative;
+  .keen-slider:not([data-keen-slider-disabled]) {
+    padding-top: 40px;
+    overflow: unset;
+  }
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: $secondary-color;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.arrow {
+  top: -22px;
+  padding-left: 4px;
+  padding-top: 10px;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  fill: white;
+  cursor: pointer;
+}
+
+.arrow--left {
+  right: 41px;
+  background: white;
+  box-shadow: 0px 0px 30px 0px rgba(133, 147, 159, 0.30);
+  fill: #262626
+}
+
+.arrow--right {
+  right: 5px;
+  top: -38px;
+  transform: rotate(180deg);
+  background: $accent-color;
+  box-shadow: 0px 0px 8px 0px rgba(182, 182, 182, 0.25);
+  fill: white
+}
+
+.arrow--disabled {
+  fill: rgba(255, 255, 255, 0.5);
+}

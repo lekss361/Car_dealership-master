@@ -1,0 +1,253 @@
+@import '../../../../variables';
+
+.carousel-section {
+
+    [class^="number-slide"],
+    [class*=" number-slide"] {
+        justify-content: center;
+    }
+
+    .basic-carousel {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        border-radius: 25px;
+        background: var(--gray-400, #EFF0F0);
+
+        #back {
+            display: flex;
+            position: absolute;
+            right: 0;
+            border-radius: 25px;
+            opacity: 0.58;
+            margin-right: 0;
+            background-blend-mode: multiply;
+            background: lightgray -76.778px -244.435px / 110.343% 151.497% no-repeat;
+        }
+
+        .full-ad {
+            position: absolute;
+            z-index: 4;
+            margin-top: 81px;
+            left: 12.57%;
+            width: 42%;
+
+            #left-only {
+                margin-top: 35px;
+                margin-bottom: 35px;
+                border-radius: 33px;
+                background-color: $accent-color;
+                color: #FFF;
+                font-size: 16px;
+                font-weight: 700;
+                width: 208px;
+                height: 29px;
+                text-align: center;
+            }
+
+            #advertisement {
+                color: $main-color;
+                font-size: 60px;
+                font-family: $main-font;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 24px;
+            }
+
+            #know-price {
+                font-size: 29px;
+                font-weight: 400;
+                color: $secondary-color;
+            }
+        }
+
+        .picture-with-ad {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 600px;
+            border-radius: 25px;
+
+            .pic-ad {
+                position: absolute;
+                z-index: 3;
+                right: 4.4%;
+                margin-top: 167px;
+                width: 55.45%;
+            }
+        }
+    }
+
+    .number-slide2 {
+        background: rgb(255, 75, 64);
+        background: linear-gradient(128deg,
+                rgba(255, 154, 63, 1) 0%,
+                rgba(255, 75, 64, 1) 100%);
+    }
+
+    .number-slide3 {
+        background: rgb(182, 255, 64);
+        background: linear-gradient(128deg,
+                rgba(182, 255, 64, 1) 0%,
+                rgba(63, 255, 71, 1) 100%);
+        background: linear-gradient(128deg,
+                rgba(189, 255, 83, 1) 0%,
+                rgba(43, 250, 82, 1) 100%);
+    }
+
+    .number-slide4 {
+        background: rgb(64, 255, 242);
+        background: linear-gradient(128deg,
+                rgba(64, 255, 242, 1) 0%,
+                rgba(63, 188, 255, 1) 100%);
+    }
+
+    .number-slide5 {
+        background: rgb(255, 64, 156);
+        background: linear-gradient(128deg,
+                rgba(255, 64, 156, 1) 0%,
+                rgba(255, 63, 63, 1) 100%);
+    }
+
+    .number-slide6 {
+        background: rgb(64, 76, 255);
+        background: linear-gradient(128deg,
+                rgba(64, 76, 255, 1) 0%,
+                rgba(174, 63, 255, 1) 100%);
+    }
+
+    .navigation {
+        position: relative;
+        margin: 0 26px 38px 25px;
+    }
+
+    .dots {
+        display: flex;
+        margin-top: -120px;
+        position: absolute;
+        z-index: 6;
+        align-items: center;
+        left: 13.57%;
+
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        background: #c5c5c5;
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+        flex-shrink: 0;
+        box-shadow: none;
+        padding: 0;
+        border: none;
+    }
+
+    .dot.active {
+        width: 20px;
+        height: 20px;
+        background-color: #FFF;
+        border-radius: 50%;
+        border: 5px solid red;
+        padding: 0;
+    }
+
+    .carusel-arrow {
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 47.5%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        fill: $main-color;
+        cursor: pointer;
+    }
+
+    .carusel-arrow--left {
+        left: 50px;
+    }
+
+    .carusel-arrow--right {
+        left: auto;
+        right: 50px;
+    }
+
+    .carusel-arrow--disabled {
+        fill: rgba(255, 255, 255, 0.5);
+    }
+
+    .hidden-arrow {
+        display: none;
+    }
+}
+
+@media (max-width:850px) {
+    .carousel-section {
+        .navigation {
+            position: relative;
+            margin: 0 25px 10px 25px;
+        }
+
+        .dots {
+            position: relative;
+            align-items: center;
+            left: 0;
+            margin-top: 0;
+
+        }
+
+        .basic-carousel {
+            height: 360px;
+
+            #back {
+                height: 110%;
+                bottom: -30%;
+                width: auto;
+            }
+
+            .full-ad {
+                margin-top: 0;
+                left: 20px;
+                width: 100%;
+
+                #left-only {
+                    font-size: 12px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 7px;
+                    height: 18px;
+                    width: 158px;
+                    margin-bottom: 13px;
+                    margin-top: 24px;
+                }
+
+                #advertisement {
+                    margin-bottom: 5px;
+                    font-size: 30px;
+                }
+
+                #know-price {
+                    font-size: 18px;
+                }
+            }
+
+
+            .picture-with-ad {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                height: 600px;
+                border-radius: 25px;
+
+                .pic-ad {
+                    right: auto;
+                    margin-top: 167px;
+                    width: 90%;
+                    bottom: 42%;
+                }
+            }
+        }
+
+    }
+}

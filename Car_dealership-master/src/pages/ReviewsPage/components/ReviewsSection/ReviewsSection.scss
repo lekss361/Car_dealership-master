@@ -1,0 +1,39 @@
+@import '../../../../variables';
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 103px;
+
+  .header {
+    color: $dark-background;
+    font-family: $main-font;
+    font-size: 70px;
+    font-weight: 700;
+    padding: 71px 0 87px 0;
+  }
+
+  .reviews-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 851px) {
+  section {
+    padding-bottom: 50px;
+
+    .header {
+      padding: 34px 0 44px 0;
+      font-size: 30px;
+    }
+
+    .reviews-block {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (min-width: 850px) {}

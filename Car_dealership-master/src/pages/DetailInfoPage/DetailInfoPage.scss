@@ -1,0 +1,210 @@
+@import '../../variables';
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+
+  .header {
+    color: $black;
+    font-family: $main-font;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .equipment {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+    padding-top: 68px;
+
+    .header {
+      text-align: center;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 71px;
+    }
+  }
+
+  .specifications {
+
+    .car-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .sizes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .size-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .height {
+          position: absolute;
+          right: -19px;
+        }
+
+        span {
+          position: absolute;
+          top: 46px;
+          right: -57px;
+        }
+      }
+
+      .params {
+        border-radius: 10px;
+        border: 1px solid $gray;
+        background: $white;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+      }
+    }
+
+    .details-info-block {
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+      padding: 39px 0;
+      align-items: center;
+
+      .dropdown {
+        width: -webkit-fill-available;
+
+        button {
+          padding: 0;
+          font-family: $main-font;
+          font-size: 16px;
+          font-weight: 700;
+
+          img {
+            position: absolute !important;
+            right: 0px;
+          }
+        }
+
+        ul {
+          position: relative;
+          border: none;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          padding: 24px 0;
+
+          li {
+            display: flex;
+
+            .option-name {
+              width: -webkit-fill-available;
+              font-family: $main-font;
+              font-size: 16px;
+              font-weight: 700;
+            }
+
+            .option-value {
+              width: -webkit-fill-available;
+            }
+          }
+        }
+      }
+
+      hr {
+        stroke-width: 1px;
+        stroke: $gray;
+        opacity: 0.6;
+        width: -webkit-fill-available;
+      }
+
+      hr:last-of-type {
+        display: none;
+      }
+
+      .btn {
+        width: 270px;
+        height: 65px;
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
+@media (max-width : 850px) {
+  .detail-info {
+
+    .header {}
+
+    .equipment {
+      gap: 20px;
+      padding-top: 40px;
+
+      .header {
+        text-align: initial;
+      }
+
+      .list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    .specifications {
+      .sizes {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .size-block {
+
+          .height {}
+
+          span {}
+        }
+
+        .params {}
+      }
+
+      .details-info-block {
+        gap: 15px;
+
+        .dropdown {
+
+          button {
+
+            img {}
+          }
+
+          ul {
+            gap: 15px;
+
+            li {
+              display: grid;
+              gap: 5px;
+
+              .option-name {}
+
+              .option-value {}
+            }
+          }
+        }
+
+        hr {}
+
+        hr:last-of-type {}
+
+        .btn {}
+      }
+    }
+  }
+}
+
+@media (min-width : 851px) {}

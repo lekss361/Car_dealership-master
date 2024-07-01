@@ -1,0 +1,24 @@
+@import "../../variables";
+
+.button-block {
+  display: flex;
+  justify-content: center;
+
+  .btn {
+    min-width: 270px;
+  }
+}
+
+@media (max-width: 851px) {
+  .button-block {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (min-width: 850px) {}

@@ -1,0 +1,43 @@
+@import '../../variables';
+
+.radiobutton-input {
+    display: none;
+}
+
+.radiobutton-label {
+    border-radius: 11px;
+    border: none;
+    background-color: $background-color;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 9px 12px;
+    cursor: pointer;
+}
+
+.custom-radiobutton {
+    text-align: center;
+    display: inline-block;
+}
+
+label:has(input:checked) {
+    background-color: $accent-color;
+}
+
+
+.radiobutton-input:checked+.custom-radiobutton {
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 24px;
+    background-color: $accent-color;
+
+    .accent {
+        color: #FFFFFF;
+    }
+}
+
+.accent {
+    color: $accent-color;
+    font-weight: 700;
+    line-height: 24px;
+}

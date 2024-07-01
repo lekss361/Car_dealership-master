@@ -1,0 +1,199 @@
+@import '../../variables';
+
+header {
+  width: 100%;
+
+  #header-info {
+    background-color: #eff0f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 260px;
+
+    :last-child {
+      text-decoration-line: underline;
+    }
+  }
+
+  #main-header {
+    padding: 22px 260px 29px 260px;
+
+    #navigation {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .icon-btn {
+        border: none;
+        background-color: #ffffff;
+      }
+
+      #header-vertical-line {
+        width: 1px;
+        height: 35px;
+        background-color: #c2c2c4;
+      }
+
+      .btn {
+        width: 210px;
+        height: 50px;
+      }
+
+      #slogan {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        .accent {
+          display: inline-block;
+          text-align: center;
+          background-color: $accent-color;
+          color: #ffffff;
+          border-radius: 22px;
+          width: 61px;
+          height: 19px;
+          margin-right: 5px;
+        }
+      }
+
+      nav {
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        font-family: $main-font;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        a {
+          color: $main-color;
+          text-decoration: none;
+        }
+      }
+
+      #phones {
+        display: flex;
+        flex-direction: column;
+
+        a {
+          text-decoration: none;
+          color: $main-color;
+          text-align: right;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+
+          &.main-phone {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+          }
+
+          &.secondary-phone {
+            font-size: 16px;
+            font-weight: 400;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+
+  #header-dropdowns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  #header-icons {
+    display: flex;
+    gap: 40px;
+  }
+
+  .login-button {
+    padding: 0 30px;
+    min-height: 50px;
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    padding: 0;
+
+    #header-info {
+      padding: 5px 15px;
+      font-weight: 700;
+      text-align: right;
+      font-style: normal;
+      line-height: normal;
+      font-family: $main-font;
+      font-size: 11px;
+      display: flex;
+      justify-content: space-between;
+
+      .phone {
+        color: $main-color;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      .callback {
+        display: flex;
+        gap: 3px;
+        font-weight: 700;
+        text-align: right;
+        font-style: normal;
+        line-height: normal;
+        font-family: $main-font;
+        font-size: 11px;
+        color: $accent-color;
+        text-decoration: none;
+        border: none;
+      }
+    }
+
+    #main-header {
+      padding: 9px 15px 12px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      #logo {
+        width: 127px;
+        height: 37px;
+      }
+
+      #menu {
+        width: 20px;
+        height: 17px;
+      }
+    }
+
+    #header-dropdowns {
+      padding: 0;
+    }
+
+    #header-icons {
+      gap: 25px;
+
+      img {
+        width: 17px;
+        height: 17px;
+      }
+    }
+
+    .login-button {
+      padding: 5px 10px;
+      font-size: 14px;
+      min-height: 40px;
+      margin-right: 20px;
+    }
+  }
+}

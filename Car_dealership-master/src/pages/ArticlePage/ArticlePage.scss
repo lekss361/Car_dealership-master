@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.article-section {
+  
+  h1 {
+    padding: 100px 0 50px;
+    text-align: center;
+  }
+  
+  
+  .article-block {
+    
+    h2 {
+      padding: 50px 0 20px;
+    }
+    
+    img {
+      width: -webkit-fill-available;
+    }
+    
+    p {
+      padding: 25px 0;
+      font-size: 23px;
+      line-height: 24px;
+      letter-spacing: .01em;
+      color: #333;
+      margin-bottom: 25px;
+      font-family: $main-font;
+    }
+  }
+}

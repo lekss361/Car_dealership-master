@@ -1,0 +1,17 @@
+@import '../../../../variables';
+
+.header-info-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $secondary-color;
+  white-space: nowrap;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  img {
+    padding-right: 7px;
+  }
+}
